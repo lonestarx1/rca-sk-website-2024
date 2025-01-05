@@ -13,8 +13,6 @@ RUN npm run build
 
 # Set environment variables
 ENV NODE_ENV=production \
-    PORT=5000
-
-EXPOSE 5000
+    PORT=5001
 
 CMD ["npm", "start"]

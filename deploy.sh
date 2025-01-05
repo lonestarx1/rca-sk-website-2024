@@ -27,8 +27,7 @@ docker pull $AWS_ACCOUNT.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPO:latest
 echo "Starting new container..."
 docker run -d \
     --name $CONTAINER_NAME \
-    -p 5000:5000 \
-    -v $(pwd)/build:/app/build \
+    -p 5001:5001 \
     --restart unless-stopped \
     $AWS_ACCOUNT.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPO:latest
 
