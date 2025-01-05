@@ -16,12 +16,12 @@ RUN apk --no-cache add curl
 
 # Add healthcheck
 HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
-  CMD curl -f http://localhost:5001/api/health || exit 1
+  CMD curl -f http://localhost:80/api/health || exit 1
 
 # Set environment variables
 ENV NODE_ENV=production \
-    PORT=5001
+    PORT=80
 
-EXPOSE 5001
+EXPOSE 80
 
 CMD ["npm", "start"]
