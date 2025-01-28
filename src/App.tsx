@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <UnderConstructionBanner />
+        {/* <UnderConstructionBanner /> */}
         <Navbar />
         <main>
           <Routes>
