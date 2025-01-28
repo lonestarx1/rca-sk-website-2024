@@ -28,11 +28,11 @@ const Navbar = () => {
         <Link to="/committee" onClick={() => setIsMenuOpen(false)}>
           Committee
         </Link>
-        <Link to="/announcements" onClick={() => setIsMenuOpen(false)}>
-          Announcements
-        </Link>
         <Link to="/businesses" onClick={() => setIsMenuOpen(false)}>
           Businesses
+        </Link>
+        <Link to="/announcements" onClick={() => setIsMenuOpen(false)}>
+          Announcements
         </Link>
       </div>
     </nav>
