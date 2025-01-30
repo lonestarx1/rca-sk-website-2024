@@ -43,7 +43,7 @@ const committeeData: CommitteeData = {
       Email: "badarito@gmail.com",
       Position: "Commissioner for Culture, Leisure, and Sports",
     },
-    { Name: "Pamela RIZIKI OKYERE", Phone: "010-9671-5051", Email: "eliariver@gmail.com", Position: "Auditor" },
+    { Name: "Pamela RIZIKI OKYERE", Phone: "010-9671-5051", Email: "ellaravery@gmail.com", Position: "Auditor" },
     { Name: "Redempta UMUHOZA", Phone: "010-7463-8512", Email: "umurede92@gmail.com", Position: "Auditor" },
     { Name: "Dr. Joel NDIKUMANA", Phone: "010-9913-8172", Email: "ndikujo100@gmail.com", Position: "Advisory Board and Disciplinary Committee" },
     { Name: "Arnauld MUGABE", Phone: "010-2090-3770", Email: "mugarnauld@gmail.com", Position: "Advisory Board and Disciplinary Committee" },
