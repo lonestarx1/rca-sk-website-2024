@@ -31,69 +31,69 @@ interface CommitteeData {
 
 const committeeData: CommitteeData = {
   "Executive Committee": [
-    { Name: "Adriel Niyodusaba", Phone: "010-9998-7109", Email: "siradriel@gmail.com", Position: "Chairperson" },
-    { Name: "NDAGIJIMANA Frank Aimee Rodrigue", Phone: "010-3301-6161", Email: "rodfrank01@gmail.com", Position: "Deputy Chairperson" },
-    { Name: "MURUNGI ANITA", Phone: "010-2184-6434", Email: "anitamurungi5@gmail.com", Position: "Secretary" },
-    { Name: "Maronko Moise", Phone: "010-6498-2490", Email: "antonionike2007@gmail.com", Position: "Public Relations & Communication Officer" },
+    { Name: "Adriel NIYODUSABA", Phone: "010-9998-7109", Email: "siradriel@gmail.com", Position: "Chairperson" },
+    { Name: "Frank Aimee Rodrigue NDAGIJIMANA", Phone: "010-3301-6161", Email: "rodfrank01@gmail.com", Position: "Deputy Chairperson" },
+    { Name: "Anita MURUNGI", Phone: "010-2184-6434", Email: "anitamurungi5@gmail.com", Position: "Secretary" },
+    { Name: "Moise MARONKO", Phone: "010-6498-2490", Email: "antonionike2007@gmail.com", Position: "Public Relations & Communication Officer" },
     { Name: "Marie Consolee DUSABINEMA", Phone: "010-9851-6967", Email: "7marieconsolee@gmail.com", Position: "Commissioner for Gender Equality" },
-    { Name: "David Niyomaba", Phone: "010-9720-0902", Email: "David@paramms.com", Position: "Commissioner for counseling & career guidance" },
+    { Name: "David NIYONSABA", Phone: "010-9720-0902", Email: "David@paramms.com", Position: "Commissioner for counseling & career guidance" },
     {
       Name: "Jean Claude MUHIRWA RUKUNDO",
       Phone: "010-3299-772",
       Email: "badarito@gmail.com",
       Position: "Commissioner for Culture, Leisure, and Sports",
     },
-    { Name: "Pamela Riziki Okyere", Phone: "010-9671-5051", Email: "eliariver@gmail.com", Position: "Auditor" },
-    { Name: "UMUHOZA Redempta", Phone: "010-7463-8512", Email: "umurede92@gmail.com", Position: "Auditor" },
+    { Name: "Pamela RIZIKI OKYERE", Phone: "010-9671-5051", Email: "eliariver@gmail.com", Position: "Auditor" },
+    { Name: "Redempta UMUHOZA", Phone: "010-7463-8512", Email: "umurede92@gmail.com", Position: "Auditor" },
     { Name: "Dr. Joel NDIKUMANA", Phone: "010-9913-8172", Email: "ndikujo100@gmail.com", Position: "Advisory Board and Disciplinary Committee" },
-    { Name: "MUGABE ARNAULD", Phone: "010-2090-3770", Email: "mugarnauld@gmail.com", Position: "Advisory Board and Disciplinary Committee" },
-    { Name: "REGINA PACIS UWERA", Phone: "010-2180-3072", Email: "queenpacis@gmail.com", Position: "Advisory Board and Disciplinary Committee" },
+    { Name: "Arnauld MUGABE", Phone: "010-2090-3770", Email: "mugarnauld@gmail.com", Position: "Advisory Board and Disciplinary Committee" },
+    { Name: "Regina Pacis UWERA", Phone: "010-2180-3072", Email: "queenpacis@gmail.com", Position: "Advisory Board and Disciplinary Committee" },
   ],
   "Mayors Bureau": [
     {
       Location: "Ansan & Incheon",
-      Members: [{ Name: "MUHIRE EUGENE", Phone: "010-5833-6533", Email: "muhireug@yahoo.fr", Post: "Vice Mayor" }],
+      Members: [{ Name: "Eugene MUHIRE", Phone: "010-5833-6533", Email: "muhireug@yahoo.fr", Post: "Vice Mayor" }],
     },
     {
       Location: "Busan",
       Members: [
-        { Name: "UWITONZE HOSANNA", Phone: "010-7312-6930", Email: "hosanna14@gmail.com", Post: "Mayor" },
-        { Name: "BYISHIMO ESPOIR", Phone: "010-7498-3809", Email: "byishimoe@gmail.com", Post: "Vice Mayor" },
+        { Name: "Hosanna UWITONZE", Phone: "010-7312-6930", Email: "hosanna14@gmail.com", Post: "Mayor" },
+        { Name: "Espoir BYISHIMO", Phone: "010-7498-3809", Email: "byishimoe@gmail.com", Post: "Vice Mayor" },
       ],
     },
     {
       Location: "Daegu",
       Members: [
-        { Name: "NDAYISHIMIYE ISAIE", Phone: "010-2376-5219", Email: "esaiehyb@gmail.com", Post: "Mayor" },
-        { Name: "MUKARUKUNDO MIRIAM", Phone: "010-2826-8351", Email: "mumiriam1@gmail.com", Post: "Secretary" },
+        { Name: "Isaie NDAYISHIMIYE", Phone: "010-2376-5219", Email: "esaiehyb@gmail.com", Post: "Mayor" },
+        { Name: "Miriam MUKARUKUNDO", Phone: "010-2826-8351", Email: "mumiriam1@gmail.com", Post: "Secretary" },
       ],
     },
     {
       Location: "Daejeon",
-      Members: [{ Name: "HABINEZA ELIEZEL", Phone: "010-7354-3103", Email: "habineza.eliezel@gmail.com", Post: "Mayor" }],
+      Members: [{ Name: "Eliezel HABINEZA", Phone: "010-7354-3103", Email: "habineza.eliezel@gmail.com", Post: "Mayor" }],
     },
     {
       Location: "Gwangju",
-      Members: [{ Name: "UMUGIRE ALPHONSE", Phone: "010-5466-1160", Email: "umugiresa@gmail.com", Post: "Mayor" }],
+      Members: [{ Name: "Alphonses UMUGIRE", Phone: "010-5466-1160", Email: "umugiresa@gmail.com", Post: "Mayor" }],
     },
     {
       Location: "Seoul",
       Members: [
-        { Name: "Dr. MFITUMUKIZA JOSEPH", Phone: "010-3581-4424", Email: "mjosephpatient2010@gmail.com", Post: "Mayor" },
-        { Name: "NISHIMWE H. LEON FIDELE", Phone: "010-5864-2618", Email: "gashalealeon@gmail.com", Post: "Vice Mayor" },
+        { Name: "Dr. Joseph MFITUMUKIZA", Phone: "010-3581-4424", Email: "mjosephpatient2010@gmail.com", Post: "Mayor" },
+        { Name: "Leon Fidele NISHIMWE", Phone: "010-5864-2618", Email: "gashalealeon@gmail.com", Post: "Vice Mayor" },
       ],
     },
     {
       Location: "Sokcho/Gangneung",
       Members: [
-        { Name: "DUSENGIMANA ZEPHYLIN", Phone: "010-2832-7660", Email: "dzephylin@gmail.com", Post: "Mayor (Sokcho Area)" },
-        { Name: "KARIGIRWA FLAVIA", Phone: "010-4197-1866", Email: "flaviakarigirwa@gmail.com", Post: "Vice Mayor" },
-        { Name: "NDIKUMANA JEAN NEPO", Phone: "010-9998-1686", Email: "jeannepohun@gmail.com", Post: "Vice Mayor (Gangneung Area)" },
+        { Name: "Zephylin DUSENGIMANA", Phone: "010-2832-7660", Email: "dzephylin@gmail.com", Post: "Mayor (Sokcho Area)" },
+        { Name: "Flavia KARIGIRWA", Phone: "010-4197-1866", Email: "flaviakarigirwa@gmail.com", Post: "Vice Mayor" },
+        { Name: "Jean Nepo NDIKUMANA", Phone: "010-9998-1686", Email: "jeannepohun@gmail.com", Post: "Vice Mayor (Gangneung Area)" },
       ],
     },
     {
       Location: "Suwon",
-      Members: [{ Name: "BAJENEZA VALENTIN", Phone: "010-9676-2161", Email: "bajeneza13@gmail.com", Post: "Mayor" }],
+      Members: [{ Name: "Valentine BAJENEZA", Phone: "010-9676-2161", Email: "bajeneza13@gmail.com", Post: "Mayor" }],
     },
   ],
 };
