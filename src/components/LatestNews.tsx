@@ -14,7 +14,7 @@ const LatestNews: React.FC = () => {
   const newsItems: NewsItem[] = [
     {
       id: 1,
-      title: "RCA-SK ExecutiveCommittee Handover Ceremony",
+      title: "RCA-SK Executive Committee Handover Ceremony",
       date: "2024-12-11",
       description:
         "The official handover ceremony was help in Seoul, in presence of The Embassy of Rwanda in South Korea, The Outgoing Committee and The Electoral Board. The new committee was sworn in and will be serving for the next 2 years.",
