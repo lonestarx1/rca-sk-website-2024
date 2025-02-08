@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/Home.module.css";
-import logo from "../@assets/icon2.png";
+import Image from "next/image";
 import LatestNews from "../components/LatestNews";
 import UpcomingEvents from "../components/UpcomingEvents";
 
@@ -8,7 +8,20 @@ const Home = () => {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <img src={logo} alt="RCA-SK Logo" className={styles.logo} />
+        <Image
+          src="/icon2.png"
+          alt="RCA-SK Logo"
+          width={200}
+          height={200}
+          className={styles.logo}
+          priority
+          quality={100}
+          style={{
+            objectFit: "contain",
+            maxWidth: "100%",
+            height: "auto",
+          }}
+        />
         <h1 className={styles.title}>The Rwandan Community Abroad - South Korea</h1>
         <p className={styles.description}>Together a better future</p>
 

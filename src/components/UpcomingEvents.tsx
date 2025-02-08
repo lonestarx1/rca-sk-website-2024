@@ -15,8 +15,8 @@ const UpcomingEvents: React.FC = () => {
     {
       id: 1,
       title: "National Heroes Day Celebration",
-      date: "2025-03-22",
-      time: "--:00",
+      date: "2025-02-22",
+      time: "2:00 PM",
       location: "Daegu",
     },
     // Add more events as needed

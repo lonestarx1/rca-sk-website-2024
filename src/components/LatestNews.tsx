@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/Home.module.css";
-import handover2 from "../@assets/handover2.jpeg";
+import Image from "next/image";
 
 interface NewsItem {
   id: number;
@@ -18,7 +18,7 @@ const LatestNews: React.FC = () => {
       date: "2024-12-11",
       description:
         "The official handover ceremony was help in Seoul, in presence of The Embassy of Rwanda in South Korea, The Outgoing Committee and The Electoral Board. The new committee was sworn in and will be serving for the next 2 years.",
-      imageUrl: handover2,
+      imageUrl: "/handover2.jpeg",
     },
   ];
 
@@ -28,7 +28,7 @@ const LatestNews: React.FC = () => {
       <div className={styles.newsGrid}>
         {newsItems.map((item) => (
           <div key={item.id} className={styles.newsCard}>
-            {item.imageUrl && <img src={item.imageUrl} alt={item.title} className={styles.newsImage} />}
+            {item.imageUrl && <Image src={item.imageUrl} alt={item.title} width={400} height={300} className={styles.newsImage} />}
             <h3>{item.title}</h3>
             <span className={styles.newsDate}>{item.date}</span>
             <p>{item.description}</p>
