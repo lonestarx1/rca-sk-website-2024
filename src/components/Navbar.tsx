@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
+import Image from "next/image";
 import styles from "../styles/Navbar.module.css";
-import logo from "../@assets/icon2.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,26 +12,26 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <Link to="/" className={styles.logo}>
-        <img src={logo} alt="RCA-SK Logo" className={styles.logoImage} />
+      <Link href="/" className={styles.logo}>
+        <Image src="/icon2.png" alt="RCA-SK Logo" width={100} height={40} className={styles.logoImage} />
       </Link>
       <button className={styles.menuButton} onClick={toggleMenu}>
         ☰
       </button>
       <div className={`${styles.links} ${isMenuOpen ? styles.open : ""}`}>
-        <Link to="/" onClick={() => setIsMenuOpen(false)}>
+        <Link href="/" onClick={() => setIsMenuOpen(false)}>
           Home
         </Link>
-        <Link to="/about" onClick={() => setIsMenuOpen(false)}>
+        <Link href="/about" onClick={() => setIsMenuOpen(false)}>
           About
         </Link>
-        <Link to="/committee" onClick={() => setIsMenuOpen(false)}>
+        <Link href="/committee" onClick={() => setIsMenuOpen(false)}>
           Committee
         </Link>
-        <Link to="/businesses" onClick={() => setIsMenuOpen(false)}>
+        <Link href="/businesses" onClick={() => setIsMenuOpen(false)}>
           Businesses
         </Link>
-        <Link to="/announcements" onClick={() => setIsMenuOpen(false)}>
+        <Link href="/announcements" onClick={() => setIsMenuOpen(false)}>
           Announcements
         </Link>
       </div>
