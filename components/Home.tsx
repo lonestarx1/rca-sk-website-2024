@@ -20,6 +20,7 @@ const Home = () => {
             objectFit: "contain",
             maxWidth: "100%",
             height: "auto",
+            maxHeight: "200px",
           }}
         />
         <h1 className={styles.title}>The Rwandan Community Abroad - South Korea</h1>
