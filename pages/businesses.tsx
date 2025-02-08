@@ -31,7 +31,8 @@ const businesses = [
   {
     owner: "SHAIBU EMMANUEL & NELLY MPUHWE AIMELYNE",
     company: "Elly's Fabrics",
-    phone: "(+82) 10-5282-1622 / (+82) 10-3496-1394",
+    logo: "/ellys_fabric.jpeg",
+    phone: "(+82) 10-5282-1622 / (+82) 10-3496-1394 Instagram: @ellys.fabrics",
     registered: "Not yet registered",
     description:
       "We are Elly's Fabrics currently operating in Rwanda, bringing you elegance in form of fabrics and beauty beyond the skin. These fabrics are high quality asoebi from Nigeria readily available for you to 'steal the show'. ",
@@ -89,10 +90,28 @@ const Businesses = () => {
                       {business.registered}
                     </span>
                   </div>
+                  {business.logo && (
+                    <div className={businessStyles.logoContainer}>
+                      <img src={business.logo} alt={`${business.company} logo`} className={businessStyles.logo} />
+                    </div>
+                  )}
                   <div className={businessStyles.description}>{business.description}</div>
                   <div className={businessStyles.contact}>
                     <strong>Contact:</strong>
-                    <a href={`tel:${business.phone.split("/")[0].trim()}`}>{business.phone}</a>
+                    {business.phone.includes("Instagram") ? (
+                      <div>
+                        <div>
+                          <a href={`tel:${business.phone.split("/")[0].trim()}`}>{business.phone.split("Instagram")[0]}</a>
+                        </div>
+                        <div>
+                          <a href="https://www.instagram.com/ellys.fabrics" target="_blank" rel="noopener noreferrer">
+                            Instagram: @ellys.fabrics
+                          </a>
+                        </div>
+                      </div>
+                    ) : (
+                      <a href={`tel:${business.phone.split("/")[0].trim()}`}>{business.phone}</a>
+                    )}
                   </div>
                   {business.notes && (
                     <div className={businessStyles.notes}>
