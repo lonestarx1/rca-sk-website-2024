@@ -38,9 +38,9 @@ const committeeData: CommitteeData = {
     { Name: "Marie Consolee DUSABINEMA", Phone: "010-9851-6967", Email: "7marieconsolee@gmail.com", Position: "Commissioner for Gender Equality" },
     { Name: "David NIYONSABA", Phone: "010-9720-0902", Email: "David@paramms.com", Position: "Commissioner for counseling & career guidance" },
     {
-      Name: "Jean Claude MUHIRWA RUKUNDO",
-      Phone: "010-3299-772",
-      Email: "badarito@gmail.com",
+      Name: "Ntwali Thierry",
+      Phone: "010-2972-1690",
+      Email: "NA",
       Position: "Commissioner for Culture, Leisure, and Sports",
     },
     { Name: "Pamela RIZIKI OKYERE", Phone: "010-9671-5051", Email: "ellaravery@gmail.com", Position: "Auditor" },
