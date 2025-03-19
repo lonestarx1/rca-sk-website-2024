@@ -14,6 +14,13 @@ const UpcomingEvents: React.FC = () => {
   const events: Event[] = [
     {
       id: 1,
+      title: "KWIBUKA31",
+      date: "2025-04-07",
+      time: "2:00PM - 3:00PM",
+      location: "Seoul, FEBC-Korea",
+    },
+    {
+      id: 1,
       title: "National Heroes Day Celebration",
       date: "2025-02-22",
       time: "2:00 PM",
@@ -24,7 +31,7 @@ const UpcomingEvents: React.FC = () => {
 
   return (
     <div className={styles.eventsSection}>
-      <h2>Upcoming Events</h2>
+      <h2>Community Events</h2>
       <div className={styles.eventsList}>
         {events.map((event) => (
           <div key={event.id} className={styles.eventCard}>

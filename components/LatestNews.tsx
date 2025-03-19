@@ -14,6 +14,14 @@ const LatestNews: React.FC = () => {
   const newsItems: NewsItem[] = [
     {
       id: 1,
+      title: "National Heroes Day Celebration",
+      date: "2025-02-22",
+      description:
+        "The Rwandan community in Korea celebrated National Heroes Day on February 22, 2025. The event was held in Daegu, with The Ambassador of Rwanda in South Korea as the main guest of honor.",
+      imageUrl: "/heroes2025.jpg",
+    },
+    {
+      id: 2,
       title: "RCA-SK Executive Committee Handover Ceremony",
       date: "2024-12-11",
       description:
