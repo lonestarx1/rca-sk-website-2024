@@ -74,6 +74,19 @@ const Businesses = () => {
         <h1 className={styles.title}>Rwandan Businesses</h1>
         <div className={styles.content}>
           <section className={styles.section}>
+            {/* Business Directory content hidden pending review */}
+            <div className={businessStyles.comingSoon}>
+              <div className={businessStyles.messageCard}>
+                <span className={businessStyles.icon}>🚧</span>
+                <h2>Directory Update in Progress</h2>
+                <p>
+                  We are currently updating our business directory to ensure we provide you with the most reliable and trusted services. 
+                  The full list of community businesses will be back shortly after our verification review.
+                </p>
+              </div>
+            </div>
+
+            {/* 
             <div className={businessStyles.grid}>
               {businesses.map((business, index) => (
                 <div key={index} className={businessStyles.card}>
@@ -118,6 +131,7 @@ const Businesses = () => {
                 </div>
               ))}
             </div>
+            */}
           </section>
         </div>
       </main>
