@@ -12,17 +12,6 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "../build")));
 
 // API Routes
-app.get("/api/announcements", (req, res) => {
-  res.json([
-    {
-      id: 1,
-      title: "Community Meeting",
-      date: "2024-04-01",
-      content: "Monthly community meeting at Seoul Global Center",
-    },
-  ]);
-});
-
 // Health check endpoint
 app.get("/api/health", (req, res) => {
   res.json({ status: "healthy" });

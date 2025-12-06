@@ -22,17 +22,11 @@ const Navbar = () => {
         <Link href="/" onClick={() => setIsMenuOpen(false)}>
           Home
         </Link>
-        <Link href="/about" onClick={() => setIsMenuOpen(false)}>
-          About
-        </Link>
         <Link href="/committee" onClick={() => setIsMenuOpen(false)}>
           Committee
         </Link>
         <Link href="/businesses" onClick={() => setIsMenuOpen(false)}>
           Businesses
-        </Link>
-        <Link href="/announcements" onClick={() => setIsMenuOpen(false)}>
-          Announcements
         </Link>
       </div>
     </nav>

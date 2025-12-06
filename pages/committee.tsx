@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/Page.module.css";
 
-// Add interface for committee member
+// Interfaces
 interface CommitteeMember {
   Name: string;
   Phone: string;
@@ -9,21 +9,18 @@ interface CommitteeMember {
   Position: string;
 }
 
-// Add interface for mayor member
 interface MayorMember {
   Name: string;
   Phone: string;
-  Email: string;
+  Email?: string;
   Post: string;
 }
 
-// Add type for city data structure
 interface CityData {
   Location: string;
   Members: MayorMember[];
 }
 
-// Add type for committee data structure
 interface CommitteeData {
   "Executive Committee": CommitteeMember[];
   "Mayors Bureau": CityData[];
@@ -37,12 +34,7 @@ const committeeData: CommitteeData = {
     { Name: "Moise MARONKO", Phone: "010-6498-2490", Email: "antonionike2007@gmail.com", Position: "Public Relations & Communication Officer" },
     { Name: "Marie Consolee DUSABINEMA", Phone: "010-9851-6967", Email: "7marieconsolee@gmail.com", Position: "Commissioner for Gender Equality" },
     { Name: "David NIYONSABA", Phone: "010-9720-0902", Email: "David@paramms.com", Position: "Commissioner for counseling & career guidance" },
-    {
-      Name: "Ntwari Thierry",
-      Phone: "010-2972-1690",
-      Email: "jonthierry1@gmail.com",
-      Position: "Commissioner for Culture, Leisure, and Sports",
-    },
+    { Name: "Ntwari Thierry", Phone: "010-2972-1690", Email: "jonthierry1@gmail.com", Position: "Commissioner for Culture, Leisure, and Sports" },
     { Name: "Pamela RIZIKI OKYERE", Phone: "010-9671-5051", Email: "ellaravery@gmail.com", Position: "Auditor" },
     { Name: "Redempta UMUHOZA", Phone: "010-7463-8512", Email: "umurede92@gmail.com", Position: "Auditor" },
     { Name: "Dr. Joel NDIKUMANA", Phone: "010-9913-8172", Email: "ndikujo100@gmail.com", Position: "Advisory Board and Disciplinary Committee" },
@@ -51,119 +43,134 @@ const committeeData: CommitteeData = {
   ],
   "Mayors Bureau": [
     {
-      Location: "Ansan & Incheon",
-      Members: [{ Name: "Eugene MUHIRE", Phone: "010-5833-6533", Email: "muhireug@yahoo.fr", Post: "Vice Mayor" }],
+      Location: "Seoul",
+      Members: [
+        { Name: "Joseph MFITUMUKIZA", Phone: "+82-10-3581-4424", Post: "Mayor" },
+        { Name: "Naphtal MFITUMUKIZA", Phone: "+82-10-6772-4101", Post: "Vice Mayor"},
+        { Name: "Leon Fidele NISHIMWE", Phone: "+82-10-5864-2618", Post: "Vice Mayor"},
+      ],
     },
     {
-      Location: "Busan",
+      Location: "Suwon",
       Members: [
-        { Name: "Hosanna UWITONZE", Phone: "010-7312-6930", Email: "hosanna14@gmail.com", Post: "Mayor" },
-        { Name: "Espoir BYISHIMO", Phone: "010-7498-3809", Email: "byishimoe@gmail.com", Post: "Vice Mayor" },
+        { Name: "Adolphe NIYIGENA", Phone: "+82-10-9862-0978", Post: "Mayor" },
+        { Name: "Alex", Phone: "+250-736-807-800", Post: "Vice Mayor"},
+      ],
+    },
+    {
+      Location: "Incheon",
+      Members: [
+        { Name: "Blaise IKUZWE", Phone: "+82-10-4672-3492", Post: "Mayor" },
+        { Name: "Manasseh", Phone: "+82-10-8103-2293", Post: "Vice Mayor"},
+      ],
+    },
+    {
+      Location: "Ansan",
+      Members: [
+        { Name: "Jules", Phone: "+250-788-368-498", Post: "Mayor" },
+        { Name: "Eric Naphtal", Phone: "+82-10-2165-0349", Post: "Vice Mayor"},
+        { Name: "Dominique MUCYO", Phone: "+82-10-2185-6094", Post: "Secretary"}
+      ],
+    },
+    {
+      Location: "Daejeon",
+      Members: [
+        { Name: "Eliezer", Phone: "+82-10-3487-8802", Post: "Mayor" },
+      ],
+    },
+    {
+      Location: "Jeonju & Iksan",
+      Members: [
+        { Name: "Fabrice HIRWA", Phone: "+82-10-2801-6611", Post: "Mayor" },
       ],
     },
     {
       Location: "Daegu",
       Members: [
-        { Name: "Isaie NDAYISHIMIYE", Phone: "010-2376-5219", Email: "esaiehyb@gmail.com", Post: "Mayor" },
-        { Name: "Miriam MUKARUKUNDO", Phone: "010-2826-8351", Email: "mumiriam1@gmail.com", Post: "Secretary" },
+        { Name: "James MUGISHA", Phone: "+82-10-8074-6633", Post: "Mayor" },
+        { Name: "Miriam MUKARUKUNDO", Phone: "+82-10-2826-8351", Post: "Vice Mayor"},
+        { Name: "Fidele MANYONGA", Phone: "+82-10-9759-7117", Post: "Secretary"},
       ],
     },
     {
-      Location: "Daejeon",
-      Members: [{ Name: "Eliezel HABINEZA", Phone: "010-7354-3103", Email: "habineza.eliezel@gmail.com", Post: "Mayor" }],
-    },
-    {
-      Location: "Gwangju",
-      Members: [{ Name: "Alphonses UMUGIRE", Phone: "010-5466-1160", Email: "umugiresa@gmail.com", Post: "Mayor" }],
-    },
-    {
-      Location: "Seoul",
+      Location: "Busan",
       Members: [
-        { Name: "Dr. Joseph MFITUMUKIZA", Phone: "010-3581-4424", Email: "mjosephpatient2010@gmail.com", Post: "Mayor" },
-        { Name: "Leon Fidele NISHIMWE", Phone: "010-5864-2618", Email: "gashalealeon@gmail.com", Post: "Vice Mayor" },
+        { Name: "TWAHIRWA", Phone: "+82-10-7712-8637", Post: "Mayor" },
+        { Name: "Claudia", Phone: "+250-783-835-851", Post: "Vice Mayor"},
       ],
     },
     {
-      Location: "Sokcho/Gangneung",
+      Location: "Sokcho",
       Members: [
-        { Name: "Zephylin DUSENGIMANA", Phone: "010-2832-7660", Email: "dzephylin@gmail.com", Post: "Mayor (Sokcho Area)" },
-        { Name: "Flavia KARIGIRWA", Phone: "010-4197-1866", Email: "flaviakarigirwa@gmail.com", Post: "Vice Mayor" },
-        { Name: "Jean Nepo NDIKUMANA", Phone: "010-9998-1686", Email: "jeannepohun@gmail.com", Post: "Vice Mayor (Gangneung Area)" },
+        { Name: "Deborah UMWALI", Phone: "+82-10-6500-2044", Post: "Mayor" },
       ],
-    },
-    {
-      Location: "Suwon",
-      Members: [{ Name: "Valentine BAJENEZA", Phone: "010-9676-2161", Email: "bajeneza13@gmail.com", Post: "Mayor" }],
     },
   ],
 };
 
 const Committee = () => {
-  const renderExecutiveMembers = () => {
-    return (
-      <div className={styles.tableContainer}>
-        <table className={styles.executiveTable}>
-          <thead>
-            <tr>
-              <th>Position</th>
-              <th>Name</th>
-              <th>Phone</th>
-              <th>Email</th>
-            </tr>
-          </thead>
-          <tbody>
-            {committeeData["Executive Committee"].map((member, index) => (
-              <tr key={index}>
-                <td className={styles.positionCell}>{member.Position}</td>
-                <td>{member.Name}</td>
-                <td>{member.Phone}</td>
-                <td>
-                  <a href={`mailto:${member.Email}`}>{member.Email}</a>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    );
-  };
-
-  const renderMayorsBureau = () => {
-    return committeeData["Mayors Bureau"].map((city, index) => (
-      <div key={index} className={styles.citySection}>
-        <h3 className={styles.cityTitle}>{city.Location}</h3>
-        <div className={styles.cityMembers}>
-          {city.Members.map((member, memberIndex) => (
-            <div key={memberIndex} className={styles.memberRow}>
-              <strong className={styles.position}>{member.Post}:</strong>
-              <span className={styles.memberInfo}>
-                {member.Name} | {member.Phone} | <a href={`mailto:${member.Email}`}>{member.Email}</a>
-              </span>
-            </div>
-          ))}
-        </div>
-      </div>
-    ));
-  };
-
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <h1 className={styles.title}>Committee Members</h1>
-        <div className={styles.content}>
-          <section className={styles.section}>
-            <h2>Executive Committee</h2>
-            <p>Meet our dedicated team serving the Rwandan community in South Korea.</p>
-            <div className={styles.executiveCommittee}>
-              <div className={styles.committeeSection}>{renderExecutiveMembers()}</div>
-            </div>
-          </section>
+        <h1 className={styles.title}>Our Team</h1>
+        <p className={styles.subtitle}>
+          Meet the dedicated individuals working together to serve and strengthen the Rwandan community in South Korea.
+        </p>
 
-          <section className={styles.section}>
-            <h2>City Representatives</h2>
-            <p>Your closest representative in your city.</p>
-            <div className={styles.mayorsBureau}>{renderMayorsBureau()}</div>
-          </section>
+        <div className={styles.section}>
+          <h2 className={styles.sectionTitle}>Executive Committee</h2>
+          <div className={styles.executiveGrid}>
+            {committeeData["Executive Committee"].map((member, index) => (
+              <div key={index} className={styles.memberCard}>
+                <div className={styles.cardHeader}>
+                  <div className={styles.memberPosition}>{member.Position}</div>
+                  <div className={styles.memberName}>{member.Name}</div>
+                </div>
+                <div className={styles.cardContent}>
+                  <div className={styles.contactInfo}>
+                    <div className={styles.contactItem}>
+                      <span className={styles.icon}>📞</span>
+                      <span>{member.Phone}</span>
+                    </div>
+                    <div className={styles.contactItem}>
+                      <span className={styles.icon}>✉️</span>
+                      <a href={`mailto:${member.Email}`}>{member.Email}</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className={styles.section}>
+          <h2 className={styles.sectionTitle}>Mayors Bureau</h2>
+          <div className={styles.mayorsGrid}>
+            {committeeData["Mayors Bureau"].map((city, index) => (
+              <div key={index} className={styles.cityCard}>
+                <div className={styles.cityHeader}>
+                  <span className={styles.cityIcon}>🏙️</span>
+                  <span className={styles.cityName}>{city.Location}</span>
+                </div>
+                <div className={styles.cityMembers}>
+                  {city.Members.map((member, mIndex) => (
+                    <div key={mIndex} className={styles.cityMember}>
+                      <div className={styles.cityMemberRole}>{member.Post}</div>
+                      <div className={styles.cityMemberName}>{member.Name}</div>
+                      <div className={styles.cityMemberContact}>
+                        <span>📞 {member.Phone}</span>
+                        {member.Email && (
+                          <span>
+                            ✉️ <a href={`mailto:${member.Email}`}>{member.Email}</a>
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </main>
     </div>
