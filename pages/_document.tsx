@@ -11,7 +11,7 @@ export default function Document() {
         <meta name="description" content="Rwanda Community in South Korea - Official Website" />
         <link rel="apple-touch-icon" href="/logo192.png" />
         <link rel="manifest" href="/manifest.json" />
-        <title>RCA South Korea</title>
+        <title>RCA-SK</title>
       </Head>
       <body>
         <Main />
