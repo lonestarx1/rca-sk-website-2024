@@ -5,6 +5,41 @@
   color: #666;
 }
 
+.comingSoon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+}
+
+.messageCard {
+  text-align: center;
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  border-top: 5px solid #00A1DE;
+}
+
+.icon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.messageCard h2 {
+  color: #2d3748;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.messageCard p {
+  color: #718096;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -124,5 +159,13 @@
 
   .card h3 {
     font-size: 1.1rem;
+  }
+  
+  .messageCard {
+    padding: 2rem;
+  }
+  
+  .messageCard h2 {
+    font-size: 1.5rem;
   }
 }
