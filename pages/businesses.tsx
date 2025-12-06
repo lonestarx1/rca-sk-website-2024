@@ -74,10 +74,6 @@ const Businesses = () => {
         <h1 className={styles.title}>Rwandan Businesses</h1>
         <div className={styles.content}>
           <section className={styles.section}>
-            <h2>Business Directory</h2>
-            <p className={businessStyles.intro}>
-              Discover Rwandan-owned businesses and services in South Korea. Support our community's entrepreneurial spirit.
-            </p>
             <div className={businessStyles.grid}>
               {businesses.map((business, index) => (
                 <div key={index} className={businessStyles.card}>

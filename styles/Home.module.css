@@ -1,161 +1,208 @@
 .container {
-  padding: 1rem;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-image: url('/heroes2025.jpg'); /* Fallback or main image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 161, 222, 0.8), rgba(32, 96, 61, 0.8)); /* Rwandan Blue & Green tints */
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 2rem;
+  animation: fadeInUp 1s ease-out;
+}
+
+.logo {
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+  margin-bottom: 1.5rem;
+  width: 180px;
+  height: auto;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  line-height: 1.2;
+}
+
+.description {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  backdrop-filter: blur(5px);
+  display: inline-block;
+}
+
+/* Community Section */
+.communitySection {
+  padding: 5rem 1rem;
+  background: #f8f9fa;
+}
+
+.sectionContent {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.main {
-  min-height: calc(100vh - 100px);
-  padding: 2rem 0;
-  flex: 1;
+.aboutGrid {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.logo {
-  height: 300px;
-  width: auto;
-  margin-bottom: 2rem;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 3rem;
-  text-align: center;
-}
-
-.description {
-  margin: 2rem 0;
-  line-height: 1.5;
-  font-size: 1.25rem;
-  text-align: center;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  width: 100%;
-  max-width: 1200px;
-  padding: 1rem;
 }
 
-.card {
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: all 0.15s ease;
+.aboutCard {
   background: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 5px solid #00A1DE; /* Rwanda Blue */
 }
 
-.card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.aboutCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 768px) {
-  .title {
-    font-size: 2rem;
-  }
-
-  .description {
-    font-size: 1.1rem;
-  }
-
-  .logo {
-    height: 200px;
-  }
+.aboutCard h2 {
+  color: #20603D; /* Rwanda Green */
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
 }
 
-@media (max-width: 480px) {
-  .container {
-    padding: 0.5rem;
-  }
-
-  .grid {
-    padding: 0.5rem;
-  }
+.aboutCard h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 40%;
+  height: 3px;
+  background: #FAD201; /* Rwanda Yellow */
+  border-radius: 2px;
 }
 
-.contentGrid {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  gap: 2rem;
-  width: 100%;
-  max-width: 1200px;
-  margin: 2rem auto;
-}
-
-.newsSection {
-  padding: 1rem;
-}
-
-.newsGrid {
-  display: grid;
-  gap: 1.5rem;
-  margin-top: 1rem;
-}
-
-.newsCard {
-  background: #ffffff;
-  border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.newsImage {
-  width: 100%;
-  max-height: 400px;
-  height: auto;
-  object-fit: contain;
-  border-radius: 4px;
+.aboutCard p {
+  color: #555;
+  line-height: 1.8;
+  font-size: 1.1rem;
   margin-bottom: 1rem;
 }
 
-.newsDate {
-  color: #666;
-  font-size: 0.9rem;
+.missionVisionGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
 
-.eventsSection {
-  padding: 1rem;
+.missionCard {
+  border-left-color: #FAD201;
 }
 
-.eventsList {
-  display: flex;
-  flex-direction: column;
+.visionCard {
+  border-left-color: #20603D;
+}
+
+.objectivesList {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
-  margin-top: 1rem;
 }
 
-.eventCard {
-  display: flex;
-  background: #ffffff;
-  border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.objectivesList li {
+  position: relative;
+  padding-left: 1.5rem;
+  line-height: 1.6;
+  color: #555;
 }
 
-.eventDate {
-  background: #f0f0f0;
-  padding: 0.5rem;
-  border-radius: 4px;
+.objectivesList li::before {
+  content: '•';
+  color: #00A1DE;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: -5px;
+}
+
+/* News Section */
+.newsSectionWrapper {
+  padding: 5rem 1rem;
+  background: white;
+}
+
+.sectionTitle {
   text-align: center;
-  min-width: 80px;
-  margin-right: 1rem;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 3rem;
 }
 
-.eventDetails {
-  flex: 1;
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
-  .contentGrid {
+  .hero {
+    height: 80vh;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+  }
+  
+  .missionVisionGrid {
     grid-template-columns: 1fr;
+  }
+  
+  .aboutCard {
+    padding: 1.5rem;
   }
 }
