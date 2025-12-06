@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles/Page.module.css";
 
-// Interfaces
+// Interfaces.
 interface CommitteeMember {
   Name: string;
   Phone: string;
