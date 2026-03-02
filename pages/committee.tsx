@@ -30,7 +30,7 @@ const committeeData: CommitteeData = {
   "Executive Committee": [
     { Name: "Adriel NIYODUSABA", Phone: "010-9998-7109", Email: "siradriel@gmail.com", Position: "Chairperson" },
     { Name: "Frank Aimee Rodrigue NDAGIJIMANA", Phone: "010-3301-6561", Email: "rodfrank01@gmail.com", Position: "Deputy Chairperson" },
-    { Name: "Anita MURUNGI", Phone: "010-2184-6434", Email: "anitamurungi5@gmail.com", Position: "Secretary" },
+    { Name: "Mignonne Umurerwa", Phone: "+250 783 812 678 (whatsapp)", Email: "mignonneumurerwa@gmail.com", Position: "Secretary" },
     { Name: "Moise MARONKO", Phone: "010-6498-2490", Email: "antonionike2007@gmail.com", Position: "Public Relations & Communication Officer" },
     { Name: "Marie Consolee DUSABINEMA", Phone: "010-9851-6967", Email: "7marieconsolee@gmail.com", Position: "Commissioner for Gender Equality" },
     { Name: "David NIYONSABA", Phone: "010-9720-0902", Email: "David@paramms.com", Position: "Commissioner for counseling & career guidance" },
